@@ -1,17 +1,17 @@
-public class Main 
-{
-  public static void main(String[] args) 
-  {
-    int stopnie = 6;
-    for (int i = 0; i <= stopnie; i++)
-      {
-          for (int j = 1; j <= i; j++)
-            {
-               System.out.print("*");
-            }
-    System.out.println(); 
-        
+public class Main {
+  public static void main(String[] args) {
+    int rows = 5; 
+    for (int i = 1; i <= rows; i++) {
 
+      for (int k = 1; k <= rows - i; k++) {
+        System.out.print(" ");
       }
+
+
+      for (int j = 1; j <= i; j++) {
+        System.out.print("*");
+      }
+      System.out.println();
+    }
   }
 }
